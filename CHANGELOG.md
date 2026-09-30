@@ -2,6 +2,10 @@
 
 What changed in each version of this extension, newest first.
 
+## 0.1.2
+
+- Made the picture on the extension's card bigger.
+
 ## 0.1.1
 
 - Linked the source repository, and a place to report problems from the extension's details in Lens.

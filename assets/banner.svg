@@ -11,7 +11,7 @@
   <rect width="800" height="400" fill="url(#bg)"/>
 
   <!-- A Lens window, marked as production by its red edge -->
-  <g transform="translate(190 70)">
+  <g transform="translate(127 16) scale(1.3)">
     <rect x="0" y="0" width="420" height="260" rx="12" fill="none" stroke="#e53935" stroke-width="10" opacity=".45" filter="url(#glow)"/>
     <rect x="0" y="0" width="420" height="260" rx="12" fill="#1e1f24"/>
     <!-- top bar -->
@@ -40,5 +40,5 @@
     <rect x="3" y="3" width="414" height="254" rx="10" fill="none" stroke="#e53935" stroke-width="6"/>
   </g>
 
-  <text x="400" y="372" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="5" fill="#e53935">PRODUCTION CLUSTER MARK</text>
+  <text x="400" y="386" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="5" fill="#e53935">PRODUCTION CLUSTER MARK</text>
 </svg>
