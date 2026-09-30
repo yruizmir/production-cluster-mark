@@ -1,12 +1,12 @@
-// A red edge around the whole window while a production cluster is the active tab.
+// A green edge around the whole window while a production cluster is the active tab.
 // Lens offers no way to restyle its own UI, so this is our own element drawn over it;
 // pointer-events: none keeps every click going to Lens.
-$production-red: #e53935;
+$production-green: #43a047;
 
 .frame {
   position: fixed;
   inset: 0;
   z-index: 2147483646;
   pointer-events: none;
-  border: 3px solid $production-red;
+  border: 3px solid $production-green;
 }
