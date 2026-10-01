@@ -1,7 +1,7 @@
 {
   "name": "production-cluster-mark",
-  "version": "0.1.3",
-  "description": "Draws a red edge around the Lens window while you work in a production cluster, so you always know you are in production.",
+  "version": "0.2.0",
+  "description": "Right-click a cluster and mark it as production: Lens then flags it with a coloured window edge, PRODUCTION labels and more, each configurable in Preferences \u2192 Extensions.",
   "license": "MIT",
   "author": "Yalton Ruiz",
   "repository": {
@@ -33,6 +33,7 @@
     "clean": "rimraf dist/"
   },
   "dependencies": {
+    "@k8slens/badge": "^3.0.0",
     "@k8slens/cluster-contracts": "^2.1.2",
     "@k8slens/command-palette-contracts": "^1.0.2",
     "@k8slens/drop-down-menu-items": "^1.1.3",
@@ -40,10 +41,13 @@
     "@k8slens/feature-core": "^7.5.2",
     "@k8slens/icon": "^4.0.0",
     "@k8slens/injectable": "^26.2.1",
+    "@k8slens/input-components": "^1.0.1",
     "@k8slens/main-view-contracts": "^1.3.2",
+    "@k8slens/navigator-components": "^1.0.3",
     "@k8slens/navigator-contracts": "^2.0.2",
     "@k8slens/notifications-contracts": "^1.0.2",
     "@k8slens/persistable-contracts": "^1.0.2",
+    "@k8slens/preferences-contracts": "^2.0.0",
     "@k8slens/status-bar-contracts": "^1.0.2",
     "@k8slens/stylesheet-contracts": "^1.0.0",
     "@k8slens/top-bar-contracts": "^1.0.2",

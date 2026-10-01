@@ -1,11 +1,12 @@
 {
   "extends": "@k8slens/typescript/config/base.json",
   "compilerOptions": {
-    "rootDir": "./src",
+    "rootDir": ".",
     "outDir": "./dist"
   },
   "include": [
     "./src/**/*.ts",
-    "./src/**/*.tsx"
+    "./src/**/*.tsx",
+    "./package.json"
   ]
 }

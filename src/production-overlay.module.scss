@@ -1,12 +1,23 @@
-// A red edge around the whole window while a production cluster is the active tab.
-// Lens offers no way to restyle its own UI, so this is our own element drawn over it;
-// pointer-events: none keeps every click going to Lens.
-$production-red: #e53935;
-
-.frame {
+// Lens offers no way to restyle its own UI, so the mark is our own element drawn over it;
+// pointer-events: none keeps every click going to Lens. Colour and thickness come from the
+// preferences, through --mark-color and --mark-thickness.
+.mark {
   position: fixed;
-  inset: 0;
   z-index: 2147483646;
   pointer-events: none;
-  border: 3px solid $production-red;
+}
+
+// An edge around the whole window.
+.border {
+  inset: 0;
+  border: var(--mark-thickness) solid var(--mark-color);
+}
+
+// A strip along the top edge of the window, over the top bar.
+.topBar {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--mark-thickness);
+  background: var(--mark-color);
 }

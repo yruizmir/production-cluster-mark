@@ -2,16 +2,33 @@
 
 Makes it obvious at all times that you are working in a production cluster, so you are less likely to change the wrong environment.
 
-## Features
+## How to use it
 
-While the selected tab belongs to a production cluster, a red edge runs around the whole Lens window. It draws over nothing you need, and clicks go straight through it.
+1. **Mark your production clusters.** Right-click a cluster in the navigator on the left and choose **Mark as production**. Clusters whose name contains `prod`, `production` or `prd` are marked for you already.
+2. **Open the cluster.** While its tab is selected, Lens is marked: by default a red edge around the window, a PRODUCTION label in the top bar and the status bar, and a PRODUCTION row under the cluster in the navigator.
+3. **Make it yours.** Open **Preferences → Extensions → production-cluster-mark** to choose which marks to show, in which colour, and how thick.
 
-Switch to a staging cluster, or to a tab that is not a cluster, and the edge disappears.
+![The production-cluster-mark preferences: a table with one row per mark, each with a checkbox, a colour and, for the window edge and the top strip, a thickness](https://raw.githubusercontent.com/yruizmir/production-cluster-mark/main/assets/preferences.png)
 
-## Which clusters count as production
+## Marking and unmarking a cluster
 
-- **By name, automatically:** a cluster whose name contains `prod`, `production` or `prd` as a separate word, such as `prod-eu`, `k8s_production` or `prd01`. Names like `preprod` or `nonprod` do not count.
-- **By hand:** right-click a cluster in the navigator and choose **Mark as production** or **Unmark as production**. From the command palette, **Production Cluster Mark: Mark this cluster as production** toggles the cluster you are looking at. Your choice overrides the name rule and is remembered across restarts.
+- **Right-click a cluster** in the navigator and choose **Mark as production** or **Unmark as production**.
+- **From the command palette:** **Production Cluster Mark: Mark this cluster as production** (or **Unmark**) toggles the cluster you are looking at.
+- **By name, automatically:** a cluster whose name contains `prod`, `production` or `prd` as a separate word, such as `prod-eu`, `k8s_production` or `prd01`, counts as production. Names like `preprod` or `nonprod` do not.
+
+Marking or unmarking by hand overrides the name rule, and is remembered across restarts.
+
+## The marks
+
+In **Preferences → Extensions → production-cluster-mark**, each mark can be turned on or off and given a colour of its own (red, orange, yellow, magenta, purple, or any colour you like):
+
+- **Window edge:** an edge around the whole window. On by default.
+- **Top strip:** a strip along the top of the window, over the top bar.
+- **Top bar label:** PRODUCTION and the cluster's name, in the top bar. On by default.
+- **Status bar label:** the same label in the status bar at the bottom. On by default.
+- **Navigator row:** a PRODUCTION row first under each production cluster in the navigator, even when it is not the cluster you have open. On by default.
+
+The window edge and the top strip each have a thickness of their own too: thin, medium or thick. The marks draw over nothing you need, and clicks go straight through them. Switch to a cluster that is not production, or to a tab that is not a cluster, and they disappear.
 
 ## Development
 
