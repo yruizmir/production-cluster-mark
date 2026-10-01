@@ -2,6 +2,10 @@
 
 What changed in each version of this extension, newest first.
 
+## 0.1.3
+
+- Put the extension's name, Production Cluster Mark, large on its picture, where cropping cannot cut it off.
+
 ## 0.1.2
 
 - Made the picture on the extension's card bigger.

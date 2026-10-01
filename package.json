@@ -1,6 +1,6 @@
 {
   "name": "production-cluster-mark",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Draws a red edge around the Lens window while you work in a production cluster, so you always know you are in production.",
   "license": "MIT",
   "author": "Yalton Ruiz",
