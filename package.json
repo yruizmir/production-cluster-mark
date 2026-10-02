@@ -1,7 +1,7 @@
 {
   "name": "production-cluster-mark",
-  "version": "0.2.0",
-  "description": "Right-click a cluster and mark it as production: Lens then flags it with a coloured window edge, PRODUCTION labels and more, each configurable in Preferences \u2192 Extensions.",
+  "version": "0.2.1",
+  "description": "Right-click a cluster and mark it as production: Lens then flags it with a coloured window edge, PRODUCTION labels and more, each configurable in Preferences → Extensions.",
   "license": "MIT",
   "author": "Yalton Ruiz",
   "repository": {

@@ -2,6 +2,10 @@
 
 What changed in each version of this extension, newest first.
 
+## 0.2.1
+
+- The README shows where each mark appears, numbered 1 to 5 on a Lens window, with the same numbers on the rows of the preferences.
+
 ## 0.2.0
 
 - More ways to mark a production cluster: a strip along the top of the window, a PRODUCTION label with the cluster's name in the top bar and in the status bar, and a PRODUCTION row first under each production cluster in the navigator.
